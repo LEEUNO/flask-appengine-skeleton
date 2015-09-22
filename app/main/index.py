@@ -4,7 +4,7 @@ from . import main as app
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return 'Hello World!@@@'
+    return 'testing'
 
 
 @app.errorhandler(404)
