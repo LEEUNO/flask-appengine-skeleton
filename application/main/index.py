@@ -1,6 +1,5 @@
-from . import main as app
+from application.main import main as app
 from flask import url_for, redirect
-
 
 @app.route('/')
 def hello():
