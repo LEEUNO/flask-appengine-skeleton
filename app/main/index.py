@@ -1,10 +1,11 @@
 from . import main as app
+from flask import url_for, redirect
 
 
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return 'testing'
+    return redirect(url_for('static', filename="index.html"))
 
 
 @app.errorhandler(404)

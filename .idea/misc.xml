@@ -15,10 +15,5 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.10 virtualenv at ~/Desktop/programming/study/flask-appengine-skeleton/env" project-jdk-type="Python SDK" />
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings />
-    </option>
-  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.10 virtualenv at ~/Desktop/programming/code/python/flask-appengine-skeleton/venv" project-jdk-type="Python SDK" />
 </project>
