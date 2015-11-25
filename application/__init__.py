@@ -1,7 +1,7 @@
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.cors import CORS
-from application.config import config
+from application.config import Config
 
 # it would be used as application module variable
 db = SQLAlchemy()
@@ -9,7 +9,7 @@ db = SQLAlchemy()
 
 def create_app(config_name='default'):
     app = Flask(__name__)
-    app.config.from_object(config[config_name])
+    app.config.from_object(Config)
     config[config_name].init_app(app)
     cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
     db.init_app(app)
