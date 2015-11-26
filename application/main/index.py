@@ -2,7 +2,7 @@ from application.main import main as app
 from flask import url_for, redirect
 
 @app.route('/')
-def hello():
+def index():
     """Return a friendly HTTP greeting."""
     return redirect(url_for('static', filename="index.html"))
 

@@ -9,9 +9,8 @@ db = SQLAlchemy()
 
 def create_app(config_name='default'):
     app = Flask(__name__)
-    app.config.from_object(Config)
-    config[config_name].init_app(app)
-    cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+    Config.init_app(app)
+    CORS(app, resources={r"/api/*": {"origins": "*"}})
     db.init_app(app)
 
     from main import main as main_blueprint
